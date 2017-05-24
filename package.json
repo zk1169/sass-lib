@@ -1,8 +1,8 @@
 {
-  "name": "cloud-vue",
+  "name": "sass-lib",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "朱坤 <kun.zhu@mei1.com>",
+  "description": "sass-lib project",
+  "author": "朱坤 <287760234@mei1.com>",
   "scripts": {
     "build": "node build/build.js"
   },
