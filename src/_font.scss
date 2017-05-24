@@ -1,0 +1,5 @@
+@for $value from 12 through 26 {
+  .fs-#{$value} {
+    font-size: $value+px!important;
+  }
+}

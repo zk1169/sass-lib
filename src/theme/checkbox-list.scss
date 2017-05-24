@@ -1,0 +1,6 @@
+@import "../variables";
+.zk-checkbox-list {
+    .zk-checkbox+.zk-checkbox {
+        margin-left: 10px;
+    }
+}

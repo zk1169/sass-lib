@@ -1,0 +1,48 @@
+@import "../variables";
+.zk-list {
+    .list-index {
+        width: 40px;
+    }
+    .list-header {
+        background: $patsnap-color;
+        color: #fff;
+        ul li {
+            padding: 3px 5px;
+        }
+    }
+    .list-body {
+        ul li {
+            border-bottom: 1px solid #d2d2d2;
+            color: #333;
+            font-size: 12px;
+            .item-column {
+                padding: 3px 5px;
+                .dot-status {
+                    width: 8px;
+                    height: 8px;
+                    background-color: #4e92df;
+                    display: inline-block;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .zk-list-header {
+        background: $patsnap-color;
+        color: #fff;
+        ul li {
+            padding: 3px 5px;
+        }
+    }
+    .zk-list-item {
+        border-bottom: 1px solid #d2d2d2;
+        color: #333;
+        font-size: 12px;
+        .item-column {
+            padding: 3px 5px;
+        }
+    }
+    .zk-list-item.checked {
+        background: #efd;
+    }
+}

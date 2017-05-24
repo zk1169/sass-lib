@@ -1,0 +1,11 @@
+@import "../variables";
+.zk-tree {
+    ul,
+    ul li {
+        list-style: none;
+    }
+    .fa-plus,
+    .fa-minus {
+        cursor: pointer;
+    }
+}

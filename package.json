@@ -1,0 +1,38 @@
+{
+  "name": "cloud-vue",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "朱坤 <kun.zhu@mei1.com>",
+  "private": true,
+  "scripts": {
+    "build": "node build/build.js"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "bootstrap-sass": "^3.3.7",
+    "chalk": "^1.1.3",
+    "css-loader": "^0.28.2",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "file-loader": "^0.11.1",
+    "node-sass": "^4.5.0",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "ora": "^1.1.0",
+    "rimraf": "^2.6.0",
+    "sass-loader": "^6.0.3",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.2.1"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

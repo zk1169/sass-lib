@@ -1,0 +1,41 @@
+@import "../variables";
+input[type="checkbox"] {
+    display: none;
+}
+
+.zk-checkbox {
+    margin: 0px;
+    label {
+        padding-left: 0px;
+    }
+    label:before {
+        font-family: "FontAwesome";
+        font-size: 16px;
+        content: "\f096";
+        margin-right: 2px;
+        width: 13px;
+        display: inline-block;
+        color: #2e6da4;
+    }
+}
+
+.zk-checkbox.checked {
+    label:before {
+        content: "\f046";
+    }
+}
+
+.zk-checkbox.indeterminate {
+    label:before {
+        content: "\f147";
+    }
+}
+
+.zk-checkbox {
+    label {
+        min-height: 20px;
+        margin-bottom: 0;
+        font-weight: normal;
+        cursor: pointer;
+    }
+}

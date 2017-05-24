@@ -1,0 +1,125 @@
+@import './variables';
+//内间距
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+//外间距
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin gutter_for_breakpoint($g:$gutter) {
+    @for $value from 1 through 3 {
+        @if $value==1 {
+            .padding {
+                @include padding($g, $g, $g, $g);
+            }
+            .padding-h {
+                @include padding(0, $g, 0, $g);
+            }
+            .padding-v {
+                @include padding( $g, 0, $g, 0);
+            }
+            .padding-left {
+                @include padding(0, 0, 0, $g);
+            }
+            .padding-right {
+                @include padding(0, $g, 0, 0);
+            }
+            .padding-top {
+                @include padding($g, 0, 0, 0);
+            }
+            .padding-bottom {
+                @include padding(0, 0, $g, 0);
+            }
+            .margin {
+                @include margin($g, $g, $g, $g);
+            }
+            .margin-h {
+                @include margin(0, $g, 0, $g);
+            }
+            .margin-v {
+                @include margin($g, 0, $g, 0);
+            }
+            .margin-left {
+                @include margin(0, 0, 0, $g);
+            }
+            .margin-right {
+                @include margin(0, $g, 0, 0);
+            }
+            .margin-top {
+                @include margin($g, 0, 0, 0);
+            }
+            .margin-bottom {
+                @include margin(0, 0, $g, 0);
+            }
+        }
+        @else {
+            .padding-#{$value} {
+                @include padding($g*$value, $g*$value, $g*$value, $g*$value);
+            }
+            .padding-h-#{$value} {
+                @include padding(0, $g*$value, 0, $g*$value);
+            }
+            .padding-v-#{$value} {
+                @include padding($g*$value, 0, $g*$value, 0);
+            }
+            .padding-left-#{$value} {
+                @include padding(0, 0, 0, $g*$value);
+            }
+            .padding-right-#{$value} {
+                @include padding(0, $g*$value, 0, 0);
+            }
+            .padding-top-#{$value} {
+                @include padding($g*$value, 0, 0, 0);
+            }
+            .padding-bottom-#{$value} {
+                @include padding(0, 0, $g*$value, 0);
+            }
+            .margin-#{$value} {
+                @include margin($g*$value, $g*$value, $g*$value, $g*$value);
+            }
+            .margin-h-#{$value} {
+                @include margin(0, $g*$value, 0, $g*$value);
+            }
+            .margin-v-#{$value} {
+                @include margin( $g*$value, 0, $g*$value, 0);
+            }
+            .margin-left-#{$value} {
+                @include margin(0, 0, 0, $g*$value);
+            }
+            .margin-right-#{$value} {
+                @include margin(0, $g*$value, 0, 0);
+            }
+            .margin-top-#{$value} {
+                @include margin($g*$value, 0, 0, 0);
+            }
+            .margin-bottom-#{$value} {
+                @include margin(0, 0, $g*$value, 0);
+            }
+        }
+    }
+}
+
+//@include gutter_for_breakpoint($gutter);
+// @media (max-width: $layout-breakpoint-xs - 1) {
+//     @include gutter_for_breakpoint($gutter/2);
+// }
+@media (max-width: $layout-breakpoint-md - 1) {
+    @include gutter_for_breakpoint($gutter);
+}
+
+@media (min-width: $layout-breakpoint-md - 1) {
+    @include gutter_for_breakpoint($gutter*2);
+}
+
+// @media (max-width: $layout-breakpoint-lg - 1) {
+//     @include gutter_for_breakpoint($gutter*4);
+// }
