@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "朱坤 <kun.zhu@mei1.com>",
-  "private": true,
   "scripts": {
     "build": "node build/build.js"
   },
