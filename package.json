@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "sass-lib project",
   "author": "朱坤 <287760234@mei1.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zk1169/sass-lib"
+  },
   "scripts": {
     "build": "node build/build.js"
   },
