@@ -1,6 +1,6 @@
 {
   "name": "sass-lib",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "sass-lib project",
   "author": "朱坤 <287760234@mei1.com>",
   "repository": {
@@ -10,7 +10,8 @@
   "scripts": {
     "build": "rm -fr dist && webpack",
     "start": "node dev-server.js",
-    "dist": "http-server -a 0.0.0.0 -p 4300"
+    "dist": "http-server -a 0.0.0.0 -p 4300",
+    "sync":"cnpm sync saas-lib"
   },
   "keywords": [
     "webpack"
